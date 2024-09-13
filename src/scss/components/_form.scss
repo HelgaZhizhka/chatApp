@@ -1,0 +1,46 @@
+.form {
+  &__row {
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+
+  &__error {
+    display: block;
+    margin-top: 5px;
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    letter-spacing: var(--letter-spacing-xs);
+    color: var(--color-error);
+  }
+
+  &__text {
+    display: block;
+    margin: 1.5rem 0;
+  }
+
+  &__footer {
+    margin-top: torem(32px);
+  }
+
+  &_horizontal {
+    .input {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &_auth {
+    .form__title,
+    .form__text {
+      text-align: center;
+    }
+
+    .form__footer .button {
+      width: 100%;
+    }
+
+    @include create-mq($grid__bp-xs, 'min') {
+      width: 370px;
+    }
+  }
+}

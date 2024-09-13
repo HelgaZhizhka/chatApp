@@ -1,0 +1,32 @@
+:root {
+  --contacts-width: 360px;
+}
+
+.contacts {
+  &__container {
+    @include create-mq($grid__bp-md, 'min') {
+      height: 100%;
+      overflow-y: auto;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    margin-top: 1px;
+    border-top: var(--border-width) solid var(--panel-border-color);
+  }
+
+  &__spinner {
+    height: 100%;
+  }
+
+  @include create-mq($grid__bp-xl, 'min') {
+    width: var(--contacts-width);
+    height: 100%;
+  }
+}
