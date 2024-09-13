@@ -1,11 +1,5 @@
 # Simple messenger
 
-## Deploy links
-
-- [Chat App](https://simple-chat-messenger.netlify.app/)
-
-## Description
-
 This is a simple chat messenger. It is a project for the course "Middle Frontend Developer" Yandex Practicum.
 
 ## Technologies
